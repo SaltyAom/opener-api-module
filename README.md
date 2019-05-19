@@ -20,10 +20,12 @@ const OpenerAPI = require("opener-api");
 import OpenerAPI from "opener-api"
 ```
   
-- OpenerAPI contains a list of shorten list of function to use with ![Opener Pro](https://github.com/aomkirby123/opener-pro).   
+- OpenerAPI contains a list of shorten list of function to use with [Opener Pro](https://github.com/aomkirby123/opener-pro).   
 * getOpenGraph(id) - Return Promise of open-graph data based on input id.
 * getGenerate(id) - Return Promise of generated image which can be used with 'decrypt' based on input id.
 * getRelate(id) - Return Promise of 5 related hentai based on input id.
+  
+Return value from each function available at ![opener.mystiar.com](https://api.opener.mystiar.com)
   
 ## Need Help?
 We welcome all contributions by sending PR to this repository.
