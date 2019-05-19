@@ -1,0 +1,15 @@
+{
+  "name": "opener-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "An Opener API shorten function as module",
+  "repository": {
+    "url": "https://github.com/aomkirby123/opener-api-module/",
+    "type": "git"
+  },
+  "license": "MIT",
+  "author": "aomkirby123",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
