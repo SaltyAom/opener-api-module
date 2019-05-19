@@ -9,6 +9,8 @@
   },
   "license": "MIT",
   "author": "aomkirby123",
+  "keywords": ["Opener API","nhentai","nhentai opener"],
+  "bugs": "https://github.com/aomkirby123/opener-api-module",
   "dependencies": {
     "axios": "^0.18.0"
   }
