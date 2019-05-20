@@ -24,6 +24,8 @@ import OpenerAPI from "opener-api"
 * getOpenGraph(id) - Return Promise of open-graph data based on input id.
 * getGenerate(id) - Return Promise of generated image which can be used with 'decrypt' based on input id.
 * getRelate(id) - Return Promise of 5 related hentai based on input id.
+* getData(id) - Return Promise of data including each page data based on input id.
+* getTag(tag, page?) - Return Promise of 5 related hentai based on input id.
   
 Return value from each function available at ![opener.mystiar.com](https://api.opener.mystiar.com)
   
