@@ -1,34 +1,9 @@
 const axios = require("axios");
-const { setupCache } = require("axios-cache-adapter");
-
-const cache = setupCache({
-    maxAge: 604800
-});
-
-const Axios = axios.create({
-    adapter: cache.adapter
-});
-
-const getOpenGraph = async id => {
-    let returnData, err;
-    let fetchPromise = new Promise((resolve,reject) => {
-        Axios.get(`https://opener.now.sh/api/g/${id}`).then(data => {
-            resolve(true);
-            return returnData = data.data;
-        }).catch(err => {
-            resolve(false);
-            return returnData = err;
-        });
-    });
-
-    await fetchPromise;
-    return returnData;
-};
 
 const getGenerate = async id => {
     let returnData;
     let fetchPromise = new Promise((resolve,reject) => {
-        Axios.get(`https://opener.now.sh/api/generate/${id}`).then(data => {
+        Axios(`https://opener.now.sh/api/generate/${id}`).then(data => {
             resolve(true);
             return returnData = data.data;
         }).catch(err => {
@@ -44,7 +19,7 @@ const getGenerate = async id => {
 const getRelate = async id => {
     let returnData;
     let fetchPromise = new Promise((resolve,reject) => {
-        Axios.get(`https://opener.now.sh/api/relate/${id}`).then(data => {
+        Axios(`https://opener.now.sh/api/relate/${id}`).then(data => {
             resolve(true);
             return returnData = data.data;
         }).catch(err => {
@@ -60,7 +35,7 @@ const getRelate = async id => {
 const getData = async id => {
     let returnData;
     let fetchPromise = new Promise((resolve,reject) => {
-        Axios.get(`https://opener.now.sh/api/data/${id}`).then(data => {
+        Axios(`https://opener.now.sh/api/data/${id}`).then(data => {
             resolve(true);
             return returnData = data.data;
         }).catch(err => {
@@ -76,7 +51,7 @@ const getData = async id => {
 const getTag = async (tag, page = 1) => {
     let returnData;
     let fetchPromise = new Promise((resolve,reject) => {
-        Axios.get(`https://opener.now.sh/api/tag/${tag}/${page}`).then(data => {
+        Axios(`https://opener.now.sh/api/tag/${tag}/${page}`).then(data => {
             resolve(true);
             return returnData = data.data;
         }).catch(err => {
