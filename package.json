@@ -1,6 +1,6 @@
 {
   "name": "opener-api",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "main": "index.js",
   "description": "An Opener API shorten function as module",
   "repository": {
@@ -10,11 +10,15 @@
   "license": "MIT",
   "author": "aomkirby123",
   "keywords": [
-    "Opener API",
+    "opener api",
     "nhentai",
-    "nhentai opener"
+    "nhentai opener",
+    "opener-api",
+    "opener"
   ],
-  "bugs": "https://github.com/aomkirby123/opener-api-module",
+  "homepage": "https://github.com/aomkirby123/opener-api-module",
+  "bugs": "https://github.com/aomkirby123/opener-api-module/issues",
+  "readmeFilename": "README.md",
   "dependencies": {
     "axios": "^0.18.0"
   }
